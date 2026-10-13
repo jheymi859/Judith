@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felices 2 Meses - Judith Lisbeth</title>
+  
+  <!-- Fuentes románticas desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Música de fondo: Axel - Te Voy a Amar -->
+  <audio id="bg-music" loop>
+    <source src="axel_te_voy_a_amar.mp3" type="audio/mpeg">
+    Tu navegador no soporta el reproductor de audio.
+  </audio>
+
+  <!-- Pantalla de Conteo Regresivo y Anuncio de Fuegos Artificiales -->
+  <div id="countdown-overlay" class="countdown-overlay">
+    <div class="countdown-card">
+      <button id="start-btn" class="start-trigger-btn">
+        💖 Haz clic aquí para comenzar nuestra sorpresa
+      </button>
+
+      <!-- Conteo del 10 al 0 -->
+      <div id="countdown-box" class="countdown-box hidden">
+        <span id="countdown-number" class="countdown-number">5</span>
+        <p class="countdown-subtext">Preparando algo muy especial...</p>
+      </div>
+
+      <!-- Anuncio tras el conteo -->
+      <div id="celebration-message" class="celebration-message hidden">
+        <h1 class="anniversary-title">¡Feliz Aniversario Mi Amor Judith Lisbeth! 💕</h1>
+        <p class="anniversary-subtitle">2 Meses inolvidables de novias</p>
+        <button id="enter-site-btn" class="enter-btn">Ver nuestro regalo 💌</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor Principal / Tarjeta de Amor -->
+  <main class="card-container">
+    <header class="header">
+      <span class="badge">Nuestra Historia</span>
+      <h1 class="title">¡Felices 2 Meses de Novias!</h1>
+      <p class="to-name">Para mi amada Judith Lisbeth</p>
+    </header>
+
+    <!-- Sección del Video -->
+    <section class="video-section">
+      <div class="video-wrapper">
+        <video id="main-video" controls poster="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80">
+          <source src="lizi.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de este video.
+        </video>
+      </div>
+      <p class="video-caption">Un pequeño recuerdo de nuestro hermoso camino juntas 💕</p>
+    </section>
+
+    <!-- Carta de Amor -->
+    <article class="letter-section">
+      <h2 class="letter-title">Para mi hermosa Judith Lisbeth</h2>
+      <p class="letter-body">
+        Hoy cumplimos 2 meses compartiendo sonrisas, momentos inolvidables y un cariño hermoso que no para de crecer. 
+        Cada día a tu lado es increible por que no pense encontrar una personita tan bella, y quiero seguir celebrando cada instante de nuestra historia juntas. 
+        le doy gracias a Dios por tu existencia mi amor porque eres tan unica y por llenar mis días de tanta alegría. sabes lo que amo tu vocecita en cada mañana,
+        tus ojitos cautivadores, la forma de tus labios 
+      </p>
+      <p class="signature">eres mi persona en el mundo bebe ❤️</p>
+    </article>
+
+    <!-- Botón Interactivo -->
+    <div class="action-section">
+      <button id="love-btn" class="love-button">
+        <span class="heart-icon">💖</span> Repetir fuegos artificiales
+      </button>
+    </div>
+  </main>
+
+  <!-- Capa Dinámica para Lluvia de Te Quiero, Corazones y Fuegos Artificiales -->
+  <div id="animation-layer" class="animation-layer"></div>
+
+  <!-- Código JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
